@@ -394,7 +394,7 @@ html_content = f"""
         imageryProvider: Cesium.createWorldImageryAsync({{
             style: Cesium.IonWorldImageryStyle.AERIAL
         }}),
-        shouldAnimate: true
+        shouldAnimate: false
     }});
 
     var czmlData = {trajectory_czml};
