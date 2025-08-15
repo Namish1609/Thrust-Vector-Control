@@ -342,7 +342,7 @@ def generate_czml(times_arr, lat_arr, lon_arr, alt_arr, model_url, out_path="tra
 # -----------------------------
 # Example: convert local XY to lat/lon around Kennedy
 # -----------------------------
-lat0, lon0 = 28.583434, -80.582876
+lat0, lon0 = 48.629204, 2.521703
 deg_per_m_lat = 1.0 / 111320.0
 deg_per_m_lon = 1.0 / (111320.0 * math.cos(math.radians(lat0)))
 
@@ -388,7 +388,7 @@ html_content = f"""
 <body>
 <div id="cesiumContainer"></div>
 <script>
-    Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0YTg5MDIxZS01N2I0LTRmYjItOGRkZC00MTI3ZWM3MzJlNzYiLCJpZCI6MzMxMzM3LCJpYXQiOjE3NTUxODA5Nzh9.5mG6UMABdHIBXtrxRR5554zR2v-PSAquNtPt4zetNvk";
+    Cesium.Ion.defaultAccessToken = "";
 
     var viewer = new Cesium.Viewer('cesiumContainer', {{
         imageryProvider: Cesium.createWorldImageryAsync({{
